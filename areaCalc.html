@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+</head>
+<body>
+    <!-- <label>Length:</label>
+    <input type="number" name="Length" id="" required >
+
+    <label>Width:</label>
+    <input type="number" name="Width" id="" required >
+
+    <button id="button">Calculate</button> -->
+
+    <h2>area calculator</h2>
+
+    <script>
+
+        function calcArea(){
+            let length = prompt("What is the length?");
+
+        if (isNaN(length)){
+            alert("Error!")
+            return
+        }
+
+        let width = prompt("What is the width?");
+        if (isNaN(width)){
+            alert("Error!")
+            return
+        }
+        const area = length * width;
+        alert("The area of your Rectange is " + area)
+        }
+
+        calcArea()
+
+        // const calculateButton = document.getElementById('button');
+
+        // button.addEventListener('click', calc);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Prompt</title>
+</head>
+<body>
+
+    <h1 id="login">Click to Login</h1>
+
+    <script>
+
+        const loginButton = document.getElementById("login");
+
+        loginButton.addEventListener("click", loginCLick);
+
+    
+        function loginCLick(){
+
+            const answer1 = prompt("Who Are You?");
+            if (answer1 === "Admin" || answer1 === "admin"){
+                const passwordPrompt = prompt("Enter Password");{
+                    if (passwordPrompt === ''){
+                        alert ("Cancelled")
+                    } else if (passwordPrompt === "TheMaster"){
+                        alert ("Welcome!")
+                    } else if (passwordPrompt != "TheMaster"){
+                        alert ("Wrong Password!")
+                    }
+                }
+            } else if (answer1 != "Admin" || answer1 != "admin"){
+                alert ("I Don’t Know You")
+            }
+        }
+
+            
+    </script>
+    
+</body>
+</html>
